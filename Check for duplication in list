@@ -1,0 +1,19 @@
+student_id = []
+
+for i in range(1, 11):
+    student_id.append(int(input(f"Enter Student ID of student {i}: ")))
+
+print(student_id)
+
+def duplication_id(s_list):
+    for i in s_list:
+        if s_list.count(i) > 1:
+            return True
+    return False
+
+result = duplication_id(student_id)
+
+if result:
+    print("Duplication in the list.")
+else:
+    print("No duplication in the list.")
